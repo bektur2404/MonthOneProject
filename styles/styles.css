@@ -51,61 +51,153 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 30px 0px;
 
 }
+
+
 .spanHero {
 
     width: 400px;
 }
 
 .textBig {
-    color: aliceblue;
+    color: white;
     font-size: 72px;
+    width: 577px;
+    height: 188px;
 }
 .textSmall {
-    color: aliceblue;
+    color: white;
     font-size: 20px;
     margin-top: 30px;
+    width: 595px;
+    height: 90px ;
     
 
 }
 
 .button1 {
-    color: aliceblue;
+    color: white;
     border: 1px solid;
     border-radius: 5px;
     width: 300px;
     background: transparent;
+    padding: 10px 30px;
+    size: 16px;
+    margin-right: 10px;
+
 }
 
 .button2 {
-    color: aliceblue;
-    background-color: orange;
+    color: white;
+    background-color: #FF5A30;
     border-radius: 5px;
+    size: 16px;
+    padding: 10px 30px;
 }
 .orange {
-    color: orange;
+    color: #FF5A30;
 }
 .formTitle {
     font-weight: bold;
     font-size: 28px;
 }
+
 .form {
     display: flex;
     flex-direction: column;
     align-items: center;
     border: 1px solid;
     padding: 48px 60px;
+    border-radius: 5px;
 }
 .formData {
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
+
 .formInput {
     display: flex;
     flex-direction: column;
 }
+
 .formInput input {
     padding: 12px 16px;
+}
+.icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.blockQuality {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.blockSafety {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.blockComfort {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.pQuality {
+    font-weight: bold;
+    color: #1E212C;
+}
+
+.pSafety {
+    font-weight: bold;
+    color: #1E212C;
+}
+
+.pComfort {
+    font-weight: bold;
+    color: #1E212C;
+}
+
+.text1 {
+    font-size: 16px;
+    width: 285px;
+    height: 78px; 
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #787A80;
+}
+.text2 {
+    font-size: 16px;
+    width: 285px;
+    height: 78px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #787A80;
+}
+.text3 {
+    font-size: 16px;
+    width: 285px;
+    height: 78px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #787A80;
+}
+.Corevalues {
+    color: #1E212C;
+    font-size: large;
+}
+.Ourmission {
+    color: #787A80;
+    margin-bottom: 20px;
 }
