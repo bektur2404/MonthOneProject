@@ -7,6 +7,12 @@
 * {
     font-family: Ubuntu;
 }
+.overflowHidden {
+    overflow: hidden;
+}
+.visible {
+    display: block !important;
+}
 
 body {
     margin: 0;
@@ -34,24 +40,33 @@ body {
 .navbar{
     display: flex;
 }
-
 .navbar p{
     margin-right: 40px;
 }
-
 .contacts{
     display: flex;
 }
-
 .contactsItem{
     display: flex;
     margin-left: 36px;
 }
 .contactsInfo{
-    margin-left: 12px;
+    margin-left: 12px
 }
 .contactsInfo p{
     margin: 0;
+}
+.mobileMenu{
+    display: none;
+}
+.mobileMenuOpened{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    left: 0;
+    top: 0;
 }
 .hero{
     background: url(../assets/bg-image.png);
@@ -170,6 +185,7 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .blockQuality {
@@ -320,6 +336,8 @@ body {
     background-color: yellow;
 }
 
+
+
 .browse {
     width: 120px;
     height: 120px;
@@ -374,4 +392,61 @@ body {
     color: #FF5A30;
     border: 1px solid;
     border-radius: 8px;
+}
+.SupportedBy {
+    display: flex;
+    margin-top: 150px;
+    justify-content: center;
+    align-items: center;
+}
+.SupportedByIcons {
+    margin: 150px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.profileText {
+    font-size: 16px;
+    width: 600px;
+    height: 78px;
+    color: #787A80;
+    display: flex;
+    justify-content: left;
+}
+.WhatOurandImg {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+
+@media (max-width: 750px) {
+    .container{
+        padding: 0 15px;
+        width: unset;
+    }
+    .navbar {
+        display: none;
+    }
+    .contacts{
+        display: none;
+    }
+    .formData{
+        flex-direction: column;
+    }
+    .servicesItems{
+        flex-direction: column;
+    }
+    .icons {
+        flex-direction: column;
+    }
+    .ExploreItems {
+        flex-direction: column;
+    }
+    #messageInput {
+        width: unset;
+    }
+    .mobileMenuOpened {
+        display: block;
+        
+    }
 }
